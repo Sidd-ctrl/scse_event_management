@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Participant Registration</title>
+    <link rel="stylesheet" href="../css/event_style.css">
+    <img src="../images/xim.png" alt="College Logo" class="logo">
+
+</head>
+<body>
+    <div class="container">
+        <h2>Enter Participant Details</h2>
+        <form id="addParticipantForm" action="../php/save_participant.php" method="POST">
+            <label for="participantName">Name:</label>
+            <input type="text" id="participantName" name="participantName" required>
+
+            <label for="rollNumber">Roll Number:</label>
+            <input type="text" id="rollNumber" name="rollNumber" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="phoneNumber">Phone Number:</label>
+            <input type="tel" id="phoneNumber" name="phoneNumber" required>
+
+            <button type="submit">Register Now</button>
+        </form>
+    </div>
+</body>
+</html>

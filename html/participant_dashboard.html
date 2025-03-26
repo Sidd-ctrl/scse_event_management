@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Participant Dashboard</title>
+    <link rel="stylesheet" href="../css/participant_style.css">
+</head>
+<body>
+    <div class="dashboard">
+        <!-- Header -->
+        <div class="header">
+            <h2> SCSE Events-Participant Dashboard</h2>
+            <img src="../images/xim-logo.jpeg" alt="University Logo" class="university-logo">
+        </div>
+        <hr>
+
+        <div class="content">
+            <!-- Left Panel: Club Profiles -->
+            <div class="left-panel">
+                <h3>CLUB PROFILE </h3>
+
+                <div class="club-box">
+                    <div class="club-header">
+                        <h4 class="club-name">ACM XIM STUDENT CHAPTER </h4>
+                        <img src="../images/acm-xim.png" alt="ACM Logo" class="club-logo">
+                    </div>
+                    <p class="club-description">ACM XIM promotes coding excellence, innovation, and tech community growth through events and workshops </p>
+                    <div class="club-bottom">
+                        <a href="https://xim-scse.acm.org/" class="info-btn" style="text-decoration: none; display: inline-block;">More Info</a>
+                        <div class="club-links">
+                            <a href="mailto:student.chap.acm@xim.edu.in">Email</a>
+                            <a href="https://www.instagram.com/acm_xim?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==">Instagram</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="club-box">
+                    <div class="club-header">
+                        <h4 class="club-name">IEEE XIM STUDENT BRANCH</h4>
+                        <img src="../images/ieee-logo.jpeg" alt="IEEE Logo" class="club-logo">
+                    </div>
+                    <p class="club-description">IEEE XIM fosters technological innovation, research, and professional development in engineering</p>
+                    <div class="club-bottom">
+                        <a href="https://edu.ieee.org/in-ximub/" class="info-btn" style="text-decoration: none; display: inline-block;">More Info</a>
+
+                        <div class="club-links">
+                            <a href="mailto:ieee@xyz.com">Email</a>
+                            <a href="https://www.instagram.com/ieee_scse_xim?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="> Instagram</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="club-box">
+                    <div class="club-header">
+                        <h4 class="club-name">ROBOGENIX</h4>
+                        <img src="../images/robo-logo.jpeg" alt="Coding Club Logo" class="club-logo">
+                    </div>
+                    <p class="club-description">Robogenix XIM explores robotics, automation, and AI through hands-on projects and competitions.</p>
+                    <div class="club-bottom">
+                        <a href="https://kaifkhurshid7.github.io/ROBOGENIX/" class="info-btn" style="text-decoration: none; display: inline-block;">More Info</a>
+                        <div class="club-links">
+                            <a href="mailto:robogenix@xim.edu.in">Email</a>
+                            <a href="https://www.instagram.com/robogenix_xim?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==">Instagram</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="club-box">
+                    <div class="club-header">
+                        <h4 class="club-name">XPLORE </h4>
+                        <img src="../images/xplore.jpeg" alt="Robotics Club Logo" class="club-logo">
+                    </div>
+                    <p class="club-description">Xplore Club is a coding club of SCSE</p>
+                    <div class="club-bottom">
+                        <a href="https://scse.xim.edu.in/xplore/" class="info-btn" style="text-decoration: none; display: inline-block;">More Info</a>
+
+                        <div class="club-links">
+                            <a href="mailto:">Email</a>
+                            <a href="https://www.instagram.com/xplore_xim/">Instagram</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right Panel: Upcoming Events -->
+            <div class="right-panel">
+                <h3>UPCOMING EVENTS</h3>
+
+                <div class="event-box">
+                    <h4>ACM - Hackathon 2025</h4>
+                    <p><strong>Date:</strong> April 12, 2025</p>
+                    <p><strong>Time:</strong> 10:00 AM - 6:00 PM</p>
+                    <p><strong>Venue:</strong> Lab 5</p>
+                    <p><strong>Description:</strong> Unleash your coding skills in an intense ACM Hackathon Compete with top minds, solve real-world problems, and innovate within a set timeframe. Team up, build, and showcase your creativity</p>
+                    <p><strong>Hosted By:</strong> ACM XIM STUDENT CHAPTER</p>
+                    <a href="../html/event_register.html" class="register-btn">Register Now</a>
+
+                </div>
+
+                <div class="event-box">
+                    <h4>AI Workshop</h4>
+                    <p><strong>Date:</strong> May 5, 2025</p>
+                    <p><strong>Time:</strong> 2:00 PM - 5:00 PM</p>
+                    <p><strong>Venue:</strong> CR:301</p>
+                    <p><strong>Description:</strong> Dive into the world of Artificial Intelligence!Learn from experts, explore AI applications, and get hands-on experience with machine learning models. Perfect for beginners and enthusiasts alike.</p>
+                    <p><strong>Hosted By:</strong> IEEE Student Branch </p>
+                    <a href="../html/event_register.html" class="register-btn">Register Now</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Notice Board -->
+        <div class="notice-board">
+            <h3 style="color: red; font-weight: bold; text-decoration: underline;">Notice Board</h3>
+            <p>
+                ACM Coding Competition 13th September  
+                A coding contest will be held on 13th September at a random time to test your problem-solving skills.
+            </p>
+            <p>Regards, ACM CORE</p>
+        </div>
+        
+
+    <script>
+        function register() {
+            alert('Registration successful!');
+        }
+
+        function openClubInfo(clubName) {
+            alert(`More details about ${clubName} coming soon!`);
+        }
+    </script>
+</body>
+</html>

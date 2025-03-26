@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="../css/admin_styles.css">
+</head>
+<body>
+    <div class="dashboard-container">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <h2>Admin Panel</h2>
+            <ul>
+                <li><a href="#" onclick="showEventForm()">Add Event</a></li>
+                <li><a href="#" onclick="showGuidelines()">View Guidelines</a></li>
+            </ul>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+
+            <!-- Event Form (Initially Hidden) -->
+            <div id="event-form-container" class="hidden">
+                <h2>Add New Event</h2>
+                <form class="event-form" action="../php/admin_process.php" method="POST">
+                    <label for="event-name">Event Name:</label>
+                    <input type="text" id="event-name" name="event_name" placeholder="Enter event name" required>
+
+                    <label for="event-date">Date:</label>
+                    <input type="date" id="event-date" name="event_date" required>
+
+                    <label for="event-time">Time:</label>
+                    <input type="time" id="event-time" name="event_time" required>
+
+                    <label for="club">Select Club:</label>
+                    <select id="club" name="club">
+                        <option value="acm">ACM XIM Student Chapter</option>
+                        <option value="ieee">IEEE Student Branch</option>
+                        <option value="robotics">Robogenix</option>
+                        <option value="coding">Xplore</option>
+                        <option value="coding">SMC</option>
+                    </select>
+
+                    <label for="event-description">Short Description:</label>
+                    <textarea id="event-description" name="description" placeholder="Enter event details..." required></textarea>
+
+                    <button type="submit">Add Event</button>
+                </form>
+            </div>
+        </main>
+    </div>
+
+    <!-- Guidelines Modal -->
+    <div id="guidelines-modal" class="modal hidden">
+        <div class="modal-content">
+            <span class="close-btn" onclick="closeGuidelines()">&times;</span>
+            <h2>Event Submission Guidelines</h2>
+            <ul>
+                <li>Ensure the event name is <b>clear and descriptive</b>.</li>
+                <li>The <b>date and time</b> should not conflict with other major events.</li>
+                <li>The event should be <b>relevant to the club’s theme</b>.</li>
+                <li>Provide a <b>brief but informative description</b>.</li>
+                <li>Event registration links (if any) should be included.</li>
+                <li>The event must be approved by the <b>club president</b>.</li>
+            </ul>
+        </div>
+    </div>
+
+    <script src="../javascript/admin_script.js"></script>
+</body>
+</html>
