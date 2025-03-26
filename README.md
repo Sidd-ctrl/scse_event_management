@@ -1,0 +1,1 @@
+# scse_event_management
